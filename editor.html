@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f4f0">
+<meta name="description" content="Short-form video editing: vertical ads and reels for TikTok, Reels and Shorts.">
+<title>Short-Form Video Editing</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#f5f4f0; --ink:#17181a; --muted:#64666b; --line:#dcdad3; --card:#ffffff; --accent:#1f6b4f; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121314; --ink:#eeede8; --muted:#a3a4a7; --line:#2b2d30; --card:#1b1c1e; --accent:#4fbf8f; } }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:40px 16px 72px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:56px; }
+  .brand { font-weight:700; letter-spacing:-.01em; color:var(--ink); text-decoration:none; }
+  header a.back { color:var(--muted); text-decoration:none; font-size:14px; }
+  .eyebrow { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600; }
+  h1 { font-size:clamp(34px,6vw,58px); line-height:1.05; letter-spacing:-.03em; margin:12px 0 18px; max-width:15ch; }
+  .lede { color:var(--muted); max-width:56ch; font-size:18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; margin-top:48px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:14px; display:flex; flex-direction:column; gap:14px; }
+  video { width:100%; aspect-ratio:9/16; border-radius:12px; background:#000; display:block; }
+  .card h2 { font-size:18px; letter-spacing:-.01em; }
+  .card p { color:var(--muted); font-size:14px; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tags span { font-size:12px; border:1px solid var(--line); border-radius:999px; padding:2px 10px; color:var(--muted); }
+  .note { font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding-top:10px; }
+  .offer { margin-top:64px; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; border-top:1px solid var(--line); padding-top:40px; }
+  .offer h3 { font-size:15px; margin-bottom:6px; }
+  .offer p { color:var(--muted); font-size:14px; }
+  footer { margin-top:64px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./index.html">viewfully</a>
+    <a class="back" href="./index.html">Back to Viewfully</a>
+  </header>
+
+  <p class="eyebrow">Short-form video editing</p>
+  <h1>Vertical videos that make the point fast.</h1>
+  <p class="lede">Ads, product demos and reels for TikTok, Instagram Reels and YouTube Shorts. Hook in the first second, native-style captions, clean motion and sound design. Below are three recent edits.</p>
+
+  <section class="grid" aria-label="Selected edits">
+    <article class="card">
+      <video src="./assets/editor/superstore-a.mp4" poster="./assets/editor/superstore-a.jpg" controls playsinline preload="none"></video>
+      <h2>App demo ad, version A</h2>
+      <p>A raw phone screen recording rebuilt into a 16-second product ad: realistic phone frame, tap feedback, notification hook, a push-in on the key moment and an end card.</p>
+      <div class="tags"><span>UGC ad</span><span>Screen recording</span><span>Motion</span><span>Sound design</span></div>
+      <p class="note">Spec demo made for a creator campaign. The customer in the video is fictional.</p>
+    </article>
+    <article class="card">
+      <video src="./assets/editor/superstore-b.mp4" poster="./assets/editor/superstore-b.jpg" controls playsinline preload="none"></video>
+      <h2>App demo ad, version B</h2>
+      <p>The same footage with a different hook, captions and music. Built as an A/B variant so the strongest opening can be found by testing.</p>
+      <div class="tags"><span>Hook testing</span><span>Variants</span><span>Captions</span></div>
+      <p class="note">Spec demo made for a creator campaign. The customer in the video is fictional.</p>
+    </article>
+    <article class="card">
+      <video src="./assets/editor/calm-earth.mp4" poster="./assets/editor/calm-earth.jpg" controls playsinline preload="none"></video>
+      <h2>Calm Earth reel</h2>
+      <p>A 20-second ambient reel cut from 4K orbital footage: POV hook, timed captions and a save-worthy ending.</p>
+      <div class="tags"><span>Reel</span><span>Stock footage</span><span>Captions</span></div>
+      <p class="note">Footage: NASA Johnson Space Center, public domain. No NASA endorsement implied.</p>
+    </article>
+  </section>
+
+  <section class="offer" aria-label="What I can edit for you">
+    <div><h3>Product and app demos</h3><p>Turn a screen recording or product footage into a clean vertical ad.</p></div>
+    <div><h3>Clips and reels</h3><p>Cut long videos into short, captioned clips built to hold attention.</p></div>
+    <div><h3>Hook variants</h3><p>Several openings for the same video, ready to A/B test.</p></div>
+  </section>
+
+  <footer>Edited by the Viewfully team.</footer>
+</div>
+</body>
+</html>
