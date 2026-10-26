@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f5f4f0">
+<title>NÖRD-ONE preview</title>
+<link rel="icon" href="./lut-nord1-ty8hjf-assets/favicon-BIzdJivF.svg" type="image/svg+xml">
+<style>.lut-head{padding:22px var(--gutter) 0;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;display:flex}.lut-head h1{letter-spacing:-.03em;margin:0;font-size:clamp(24px,3.2vw,40px);font-weight:500}.lut-head p{color:var(--muted);margin:0;font-size:14px}.viewer{margin-top:14px}.look{z-index:3;color:#fff;cursor:pointer;background:#1e1f21;border:0;border-radius:999px;padding:10px 16px;font:500 14px/1 inherit;position:absolute;bottom:12px;right:12px;box-shadow:0 2px 10px #0003}.look[aria-pressed=true]{background:#c88f5c}#views button[data-view=inside]{display:none}.stage .hint{color:#33352f;background:#ffffffb8;border-radius:999px;padding:3px 8px}@media (width<=700px){.look{bottom:52px}.stage{aspect-ratio:auto;height:56vh;min-height:330px}}</style>
+  <script type="module" crossorigin src="./lut-nord1-ty8hjf-assets/index-Bu-_COBn.js"></script>
+  <link rel="stylesheet" crossorigin href="./lut-nord1-ty8hjf-assets/index-CmzSXJJX.css">
+</head>
+<body>
+<header class="lut-head"><h1>NÖRD-ONE in 3D</h1><p>Preview for LÜTSAUNA · NÖRD-ONE · visual guide, not to scale</p></header>
+<main>
+<section class="viewer" aria-label="Interactive 3D preview">
+<div class="stage" id="stage">
+<canvas id="demo-canvas" aria-label="Interactive 3D preview of a 6 by 8 foot outdoor sauna. Use the controls to change the door, heater and siding, or press Look inside."></canvas>
+<div class="views" id="views" aria-label="Camera views"></div>
+<button class="look" id="look" type="button" aria-pressed="false">Look inside</button>
+<span class="hint">Drag to turn · pinch or scroll to zoom</span>
+</div>
+<div class="panel"><div id="controls" class="panel"></div><p class="caption" id="caption" aria-live="polite"></p></div>
+</section>
+</main>
+<script>
+// "Look inside" toggles between the inside view and the front view using the shell's view buttons.
+document.getElementById('look').addEventListener('click',e=>{const b=e.currentTarget,inside=b.getAttribute('aria-pressed')!=='true';
+  const id=inside?'inside':'three';const v=document.querySelector(`#views button[data-view="${id}"]`);if(v)v.click();
+  b.setAttribute('aria-pressed',inside);b.textContent=inside?'Back outside':'Look inside';});
+</script>
+</body>
+</html>
